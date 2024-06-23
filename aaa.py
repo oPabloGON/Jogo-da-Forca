@@ -14,17 +14,17 @@ tentativa_habilitada = True  # Flag para controlar se tentativas ainda são perm
 
 # Lista de imagens da forca
 imagens_forca = [
-    "Jogo-da-Forca\imagens\imagem1 copy.png",
-    "Jogo-da-Forca\imagens\imagem1.png",
-    "Jogo-da-Forca\imagens\imagem2.png",
-    "Jogo-da-Forca\imagens\imagem3.png",
-    "Jogo-da-Forca\imagens\imagem4.png",
-    "Jogo-da-Forca\imagens\imagem5.png",
-    "Jogo-da-Forca\imagens\imagem6.png",
-    "Jogo-da-Forca\imagens\imagem7.png",
-    "Jogo-da-Forca\imagens\imagem8.png",
-    "Jogo-da-Forca\imagens\imagem9.png",
-    "Jogo-da-Forca\imagens\imagem10.png"
+    "Jogo-da-Forca/imagens/imagem1 copy.png",
+    "Jogo-da-Forca/imagens/imagem1.png",
+    "Jogo-da-Forca/imagens/imagem2.png",
+    "Jogo-da-Forca/imagens/imagem3.png",
+    "Jogo-da-Forca/imagens/imagem4.png",
+    "Jogo-da-Forca/imagens/imagem5.png",
+    "Jogo-da-Forca/imagens/imagem6.png",
+    "Jogo-da-Forca/imagens/imagem7.png",
+    "Jogo-da-Forca/imagens/imagem8.png",
+    "Jogo-da-Forca/imagens/imagem9.png",
+    "Jogo-da-Forca/imagens/imagem10.png"
 ]
 
 # Função para iniciar um novo jogo
@@ -102,8 +102,7 @@ def verificar_resultado():
         tentativa_entry.unbind('<Return>')  # Desvincula a tecla Enter
         jogar_novamente_button.pack()  # Mostra o botão de jogar novamente
         sair_button.pack()  # Mostra o botão de sair
-    else:
-        atualizar_imagem_forca()
+    atualizar_imagem_forca()  # Garante que a imagem da forca seja atualizada em todas as situações
 
 # Função para mostrar opções após o fim do jogo
 def mostrar_opcoes_fim_jogo():
@@ -127,6 +126,12 @@ def processar_tentativa(event=None):
     tentativa = tentativa_entry.get().lower()
 
     if tentativa == "":
+        return
+
+    # Verificar se é uma letra
+    if not tentativa.isalpha():
+        resultado_label.config(text='Por favor, digite apenas letras.')
+        tentativa_entry.delete(0, tk.END)
         return
 
     if tentativa in letras_usadas:
