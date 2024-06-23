@@ -1,4 +1,16 @@
 import random as rnd
+from tkinter import *
+from tkinter import ttk
+
+myApp = Tk()
+myApp.title("Jogo da Forca")
+myApp.geometry("750x400")
+myApp.resizable(width=False, height=False)
+myApp.configure(background='White')
+
+p = ttk.Label(text="Olá mundo").place(x=1, y=10)
+
+myApp.mainloop()
 
 while True:
     definir_numero = rnd.randint(1, 9)
