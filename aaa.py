@@ -14,6 +14,7 @@ tentativa_habilitada = True  # Flag para controlar se tentativas ainda são perm
 
 # Lista de imagens da forca
 imagens_forca = [
+    "Jogo-da-Forca\imagens\imagem1 copy.png",
     "Jogo-da-Forca\imagens\imagem1.png",
     "Jogo-da-Forca\imagens\imagem2.png",
     "Jogo-da-Forca\imagens\imagem3.png",
