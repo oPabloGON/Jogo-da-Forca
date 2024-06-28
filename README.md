@@ -1,1 +1,1 @@
-# Jogo-da-Forca
+Jogo da forca feito pelos alunos João Rode, Felipe Schneider e Pablo Gonçalves
