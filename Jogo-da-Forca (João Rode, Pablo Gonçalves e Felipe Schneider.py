@@ -12,17 +12,17 @@ ganhou = False
 tentativa_habilitada = True  
 
 imagens_forca = [
-    "Jogo-da-Forca/imagens/imagem1 copy.png",
-    "Jogo-da-Forca/imagens/imagem1.png",
-    "Jogo-da-Forca/imagens/imagem2.png",
-    "Jogo-da-Forca/imagens/imagem3.png",
-    "Jogo-da-Forca/imagens/imagem4.png",
-    "Jogo-da-Forca/imagens/imagem5.png",
-    "Jogo-da-Forca/imagens/imagem6.png",
-    "Jogo-da-Forca/imagens/imagem7.png",
-    "Jogo-da-Forca/imagens/imagem8.png",
-    "Jogo-da-Forca/imagens/imagem9.png",
-    "Jogo-da-Forca/imagens/imagem10.png"
+    "imagens\imagem1 copy.png",
+    "imagens\imagem1.png",
+    "imagens\imagem2.png",
+    "imagens\imagem3.png",
+    "imagens\imagem4.png",
+    "imagens\imagem5.png",
+    "imagens\imagem6.png",
+    "imagens\imagem7.png",
+    "imagens\imagem8.png",
+    "imagens\imagem9.png",
+    "imagens\imagem10.png"
 ]
 
 def iniciar_jogo():
