@@ -187,10 +187,8 @@ letras_usadas_label.place(x=50, y=380)
 
 opcoes_frame = ttk.Frame(myApp)
 
-# Botão para jogar novamente
 jogar_novamente_button = ttk.Button(opcoes_frame, text="Jogar Novamente", command=jogar_novamente)
 
-# Botão para sair do jogo
 sair_button = ttk.Button(opcoes_frame, text="Sair", command=sair_jogo)
 
 imagem_forca_label = ttk.Label(myApp)
